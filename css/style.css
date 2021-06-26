@@ -1,0 +1,374 @@
+@import url(reset.css);
+
+.top-menu {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+header .fa-navicon{
+    vertical-align: super;
+    font-size: 23px;
+    display: none;
+    cursor: pointer;
+}
+.top-menu li {
+    float: left;
+    padding: 10px;
+}
+header .top-menu.mobile-menu{
+    margin-top: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: none;
+}
+header .top-menu.mobile-menu li{
+    float: none !important;
+    text-align: center;
+    border-bottom: 1px solid #dfdada;
+    border-top: 1px solid #c5bcbc;
+}
+.top-menu li a, header .login {
+    color: black !important;
+    font: 13px 'Avenir';
+    font-weight: 600;
+}
+
+.in-front {
+    z-index: 5;
+}
+
+header .buy {
+    width: 25px;
+    height: 27px;
+    margin-top: 20px;
+    background: url("../images/Cart Button.png");
+}
+
+header .login {
+    vertical-align: super;
+}
+
+.search-box form {
+    padding-left: 100px;
+}
+
+.search-box input[type="text"] {
+    display: block;
+    border-bottom: 2px solid black !important;
+    padding: 11px 15px 11px 0;
+    font: 15px 'Avenir';
+    font-weight: 600;
+}
+
+.search-box input[type="text"]::placeholder {
+    font: 23px 'Avenir';
+    color: black;
+    font-weight: 600;
+}
+
+.search-box button {
+    width: 43px;
+    height: 43px;
+    background: #ffff url("../images/Search.png");
+    top: 0;
+    left: 30px;
+}
+
+.search-box .title {
+    top: 13px;
+    right: 15px;
+    font: 14px 'Avenir';
+}
+
+.search-box .logo-box {
+    width: 16px;
+    height: 16px;
+    background: url("../images/Sajari Logo.png");
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.search .right-box select {
+    font: 18px 'Avenir';
+    color:rgb(108, 106, 106);
+    padding: 8.8px 5px;
+    border-bottom: 2px solid #e1e1e1 !important;
+}
+
+.search .right-box select option {
+    font-size: 14px;
+}
+
+.post-img {
+    width: 100%;
+    height: 200px;
+}
+
+.main .filter {
+    font: 15px "Avenir";
+    color:rgb(108, 106, 106);
+}
+
+.main .filter .fa {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.main .filter .title {
+    font: 14px 'Avenir';
+   
+}
+
+.filter-box {
+    z-index: 100;
+    color:rgb(138, 137, 137);
+
+}
+
+.filter-box .fa{
+    display: none;
+}
+.main .filter li {
+    padding: 15px 0 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    position: relative;
+    cursor: pointer;
+}
+.main .filter li:last-child{
+    border-bottom: none;
+}
+.main .filter li .show-box{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+.main .filter li .show-box a{
+    color: #7b7979;
+    padding-left: 10px;
+}
+.main .filter li .show-box li:last-child{
+    border-bottom: none !important;
+}
+
+.main .filter .range .left {
+    left: 0;
+}
+
+.main .filter .range .right {
+    right: 0;
+}
+
+.main .filter .range .fa {
+    top:53px;
+    background-color: white;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.main .filter .range hr {
+    margin-top: 28px;
+}
+
+.main .filter .range .price {
+    font: 13px "Avenir";
+    margin-top: 7px;
+}
+
+.main .product .name {
+    font: 17px "AvenirrRoman";
+    color: black;
+    padding: 10px 0;
+}
+
+.main .product .name h2 {
+    font-weight: 600;
+    color: black;
+    font-size: 16px;
+}
+
+.main .product .category {
+    color: #cec7c4;
+    font: 12px "Avenir";
+    padding-top: 10px;
+}
+
+.main .product .ft-box .fa {
+    font-size: 27px;
+    color: black;
+    float: right;
+}
+.product{
+    margin-bottom: 30px;
+}
+.paging{
+    margin:32px auto 30px !important;
+}
+.paging li{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 25px;
+}
+.paging li.active{
+    background-color: #504d4d;
+}
+.paging li.active a{
+    color: white;
+}
+.paging li a:not(.fa){
+    font: 15px "Avenir";
+
+}
+.paging li a{
+    font-size: 15px;
+    color: black;
+    display: block;
+    padding-top: 8px;
+}
+/*---------------rating-------------------------------*/
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rating{
+    padding-top: 10px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width: 11px;
+    height: 11px;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    margin-right: 5px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: "";
+    background: url(../images/Star.png);
+    width: 11px;
+    height: 11px;
+    display: block;
+}
+.rate > input:checked ~ label {
+    background: url(../images/StarOn.png);
+    width: 11px;
+    height: 11px;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    background: url(../images/StarOn.png);
+    width: 11px;
+    height: 11px;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    background: url(../images/StarOn.png);
+    width: 11px;
+    height: 11px;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+.range{
+    width: 100%;
+    border-radius: 10px;
+}
+.sliderValue{
+    position: relative;
+    width: 100%;
+}
+.sliderValue span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    transform: translateX(-70%) scale(0);
+    font-weight: 500;
+    top: -40px;
+    line-height: 55px;
+    z-index: 2;
+    color: #fff;
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+.sliderValue span.show{
+    transform: translateX(-70%) scale(1);
+}
+.sliderValue span:after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #664AFF;
+    border: 3px solid #fff;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+.field .value{
+    position: absolute;
+    font-size: 13px;
+    color: #040505;
+    top: 55px;
+}
+.field .value.left{
+    left: -22px;
+}
+.field .value.right{
+    right: -43px;
+}
+.range input{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    z-index: 2222;
+    margin-top: 36px;
+}
+.range input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    z-index: 5;
+    left:-5px;
+}
+.range input::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    left:-5px;
+    z-index: 99999999;
+
+}
+.range input::-moz-range-progress{
+    background: #664AFF; //this progress background is only shown on Firefox
+}
